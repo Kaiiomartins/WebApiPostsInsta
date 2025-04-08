@@ -1,0 +1,28 @@
+# Pastas de build
+bin/
+obj/
+
+# Configurações locais do Visual Studio
+.vs/
+
+# Dados de usuário
+*.user
+*.suo
+
+# Arquivos de cache do NuGet
+project.assets.json
+project.nuget.cache
+*.nupkg
+*.snupkg
+
+# Arquivos temporários
+*.log
+*.tmp
+*.swp
+
+# Banco de dados local
+*.mdf
+*.ldf
+
+# Rider (caso use)
+.idea/

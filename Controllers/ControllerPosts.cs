@@ -67,38 +67,70 @@ public class ControllerPosts : ControllerBase
     }
 
     [HttpPost("texto")]
-    public async Task<Posts> CreatePostText([FromBody] Posts posts) 
+    public async Task<Posts> CreatePostText([FromBody] Posts posts)
     {
         var post = await _servicesPosts.GetPostById(posts.Id);
 
         if (post != null) {
 
-            throw new Exception("Jà existe esse post"); 
+            throw new Exception("Jà existe esse post");
         }
 
         return await _servicesPosts.CreatePosts(posts);
 
     }
 
-
     [HttpPost("Imagem")]
-    public async Task<Posts> CreatePostImagem([FromForm] Posts posts, IFormFile imagem)
+    public async Task<IActionResult> CreatePostImagem(
+      [FromForm] int userId,
+      [FromForm] string description,
+      [FromForm] string postType,
+      [FromForm] DateTime postDate,
+      [FromForm] IFormFile imagem)
     {
-        var post = await _servicesPosts.GetPostById(posts.Id);
-
-        if (post != null)
+        var post = new Posts
         {
+            UserId = userId,
+            Description = description,
+            PostType = postType,
+            PostDate = postDate
+        };
 
-            throw new Exception("Jà existe esse post");
-        }
 
-        _servicesPosts.CreatePosts(posts);
+        var criado = await _servicesPosts.CreatePostComImagemAsync(post, imagem);
 
-        return posts;
-
+        return Ok(criado);
     }
 
-    
+    [HttpGet("Imagem/Visualizar/{postId}")]
+    public async Task<IActionResult> VisualizarImagem(int postId)
+    {
+        var caminhoRelativo = await _servicesPosts.GetCaminhoImagemAsync(postId);
+
+        if (string.IsNullOrEmpty(caminhoRelativo))
+            return NotFound("Imagem não encontrada.");
+
+        var caminhoFisico = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", caminhoRelativo.TrimStart('/'));
+
+        if (!System.IO.File.Exists(caminhoFisico))
+            return NotFound("Arquivo não existe no disco.");
+
+        var extensao = Path.GetExtension(caminhoFisico).ToLowerInvariant();
+        var contentType = extensao switch
+        {
+            ".jpg" or ".jpeg" => "image/jpeg",
+            ".png" => "image/png",
+            ".gif" => "image/gif",
+            ".webp" => "image/webp",
+            _ => "application/octet-stream"
+        };
+
+        var bytes = await System.IO.File.ReadAllBytesAsync(caminhoFisico);
+        return File(bytes, contentType);
+    }
+
+
+
     [HttpPut]
     public async Task<IActionResult> PutPost([FromBody] Posts posts)
     {
@@ -112,17 +144,17 @@ public class ControllerPosts : ControllerBase
         var postAtualizado = await _servicesPosts.UpdatePostAsync(posts);
         return Ok(postAtualizado);
     }
-    [HttpDelete]
-    public async Task<IActionResult> DeletePosts([FromBody] Posts posts)
+    [HttpDelete("{Id}")]
+    public async Task<IActionResult> DeletePosts( int id)
     {
-        var postExistente = await _servicesPosts.GetPostById(posts.Id);
+        var postExistente = await _servicesPosts.GetPostById(id);
 
         if (postExistente == null)
         {
             return NotFound(new { mensagem = "Post não encontrado." });
         }
 
-        var postDeletado = await _servicesPosts.DelesPostAsync(posts.Id);
+        var postDeletado = await _servicesPosts.DeletesPostAsync(id);
 
         return Ok(postDeletado);
     }
