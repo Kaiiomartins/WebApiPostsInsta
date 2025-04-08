@@ -1,0 +1,142 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|c:\\users\\kaio\\myprojetos\\btgestudos\\postswebapi\\models\\posts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|solutionrelative:models\\posts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|c:\\users\\kaio\\myprojetos\\btgestudos\\postswebapi\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|c:\\users\\kaio\\myprojetos\\btgestudos\\postswebapi\\servicos\\servicesposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|solutionrelative:servicos\\servicesposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|c:\\users\\kaio\\myprojetos\\btgestudos\\postswebapi\\controllers\\controllerposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|solutionrelative:controllers\\controllerposts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|c:\\users\\kaio\\myprojetos\\btgestudos\\postswebapi\\servicos\\metodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|solutionrelative:servicos\\metodos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|c:\\users\\kaio\\myprojetos\\btgestudos\\postswebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|c:\\users\\kaio\\myprojetos\\btgestudos\\postswebapi\\database\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{52F05B9C-D578-46AC-9FB7-76F82584F3A8}|PostsWebApi.csproj|solutionrelative:database\\appcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Posts.cs",
+              "DocumentMoniker": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Models\\Posts.cs",
+              "RelativeDocumentMoniker": "Models\\Posts.cs",
+              "ToolTip": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Models\\Posts.cs",
+              "RelativeToolTip": "Models\\Posts.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T14:53:09.907Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ControllerPosts.cs",
+              "DocumentMoniker": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Controllers\\ControllerPosts.cs",
+              "RelativeDocumentMoniker": "Controllers\\ControllerPosts.cs",
+              "ToolTip": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Controllers\\ControllerPosts.cs",
+              "RelativeToolTip": "Controllers\\ControllerPosts.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAYwJgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T16:47:47.351Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServicesPosts.cs",
+              "DocumentMoniker": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Servicos\\ServicesPosts.cs",
+              "RelativeDocumentMoniker": "Servicos\\ServicesPosts.cs",
+              "ToolTip": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Servicos\\ServicesPosts.cs",
+              "RelativeToolTip": "Servicos\\ServicesPosts.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAewBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T13:22:30.217Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppContext.cs",
+              "DocumentMoniker": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Database\\AppContext.cs",
+              "RelativeDocumentMoniker": "Database\\AppContext.cs",
+              "ToolTip": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Database\\AppContext.cs",
+              "RelativeToolTip": "Database\\AppContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T14:38:10.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Metodos.cs",
+              "DocumentMoniker": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Servicos\\Metodos.cs",
+              "RelativeDocumentMoniker": "Servicos\\Metodos.cs",
+              "ToolTip": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Servicos\\Metodos.cs",
+              "RelativeToolTip": "Servicos\\Metodos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T14:26:31.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Models\\Users.cs",
+              "ToolTip": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Models\\Users.cs",
+              "RelativeToolTip": "Models\\Users.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T21:13:01.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Kaio\\MyProjetos\\BtgEstudos\\PostsWebApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T20:39:07.822Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
