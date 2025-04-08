@@ -61,13 +61,13 @@ namespace PostsWebApi.Servicos
             if (post == null)
                 return null;
 
-            _appContext.Update(posts);
+            _appContext.Entry(post).CurrentValues.SetValues(posts);
             await _appContext.SaveChangesAsync();
 
             return posts;
         }
 
-        public async Task<Posts> DelesPostAsync(int id)
+        public async Task<Posts> DeletesPostAsync(int id)
         {
 
             var Post = await _appContext.Posts.FindAsync(id);
@@ -118,13 +118,22 @@ namespace PostsWebApi.Servicos
             if (post == null || string.IsNullOrEmpty(post.ImagemUrl))
                 return null;
 
-            var caminhoFisico = Path.Combine("wwwroot", post.ImagemUrl.TrimStart('/'));
+            var caminhoFisico = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", post.ImagemUrl.TrimStart('/'));
+
+            Console.WriteLine($" Caminho gerado: {caminhoFisico}");
 
             if (!System.IO.File.Exists(caminhoFisico))
+            {
+                Console.WriteLine(" Arquivo não encontrado.");
                 return null;
+            }
 
+            Console.WriteLine(" Arquivo encontrado com sucesso.");
             return post.ImagemUrl;
         }
+
+
+
 
         public async Task<Users> GetUserByUserName(string userName)
         {

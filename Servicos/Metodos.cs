@@ -14,7 +14,7 @@ namespace PostsWebApi.Servicos
         Task<Posts> UpdatePostAsync(Posts posts);
 
 
-        Task<Posts> DelesPostAsync(int id);
+        Task<Posts> DeletesPostAsync(int id);
 
         Task<Posts> CreatePostComImagemAsync(Posts posts, IFormFile imagem);
 
